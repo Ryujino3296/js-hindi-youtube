@@ -44,7 +44,7 @@ Fr :- France */
     game2: 'Spiderman'
 }*/
 
-//OBJECTS ARE NOT ITRETABLE so we can't iterate over it 
+//OBJECTS ARE NOT ITRETABLE so we can't iterate over it USING " ****FOR OF LOOP **** "
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
     
@@ -71,6 +71,7 @@ for (const key in programming) {
     //console.log(programming[key]);
 }
 
+//MAP ARE NOT ITRETABLE so we can't iterate over it USING " ****FOR IN LOOP **** "
 // const map = new Map()
 // map.set('IN', "India")
 // map.set('USA', "United States of America")
