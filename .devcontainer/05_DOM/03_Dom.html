@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div') // bnadiya div 
+    console.log(div); // but abhi dikh nahi rha hai website pe 
+
+    div.className = "main" // className likhna 
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title") // btao kya kya set krna hai 
+    div.style.backgroundColor = "green" // styling krlo 
+    div.style.padding = "12px" // padding krdo 
+
+    // abhi bhi nhi dikh rha hoga page pe kyunki memory ke andar hai 
+    // div.innerText = "Chai aur code"// iner text nahi prefer nahi kr rhe hai 
+    
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText) // dono hi sahi hai abhi to baad me kabhi discuss krenge ki kaunsi acha tarika hai 
+
+    // ab dikhne lagega page kyunki attach hjo krdiya hai hmne 
+    document.body.appendChild(div) 
+</script>
+</html>
