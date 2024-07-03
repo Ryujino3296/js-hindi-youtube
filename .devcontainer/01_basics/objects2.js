@@ -72,8 +72,10 @@ console.log(instructor);
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
-// }
+// } // THIS IS ONLY JASON just like object JAB HME KAAM krna hoga tab hmlog JASON ko OBJECT me convert krlenge
+// aur fir uske hisab se operation krenge
 
+// HOSKTA HAI KI API ka response Array me aaye 
 [
     {},
     {},
