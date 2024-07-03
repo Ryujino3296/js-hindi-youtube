@@ -51,7 +51,7 @@ function addone(num){
 }
 
 
-
+// aise agr kisi variable me function store krlete hai to usko declaration ke pehle access nahi krskte hai 
 addTwo(5)
 const addTwo = function(num){
     return num + 2
