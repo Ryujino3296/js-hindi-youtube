@@ -20,6 +20,10 @@ do {
     score++
 } while (score <= 10);
 
+
+
+//  FOR EACH LOOP KOI VALUE TO RETURN NSHI KRNE WALA USKA PROOF HAI NEECHE 
+
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
@@ -28,8 +32,10 @@ do {
 //     return item
 // } )
 
-// console.log(values);
+// console.log(values); // ISK ANSWER UNDEFINED HI AYEGA 
 
+
+// AUR ISI PROBLEM KO HTAE KELIYE FILTERS KA USE AAYA 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
