@@ -1,4 +1,4 @@
-// singleton
+// singleton   agr constructor se object bnega to singleton bnega 
 // Object.create
 
 // object literals
