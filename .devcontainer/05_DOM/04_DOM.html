@@ -29,18 +29,25 @@
     function addOptiLanguage(langName)
     {
         const li = document.createElement('li'); 
-        li.appendChild(document.createTextNode(langName)) // same as addLanguage function ka startig ke do line but slight optimization
-        document.querySelector('.language').appendChild(li)
+        const k = document.createTextNode(langName) ; // YHA PE EK TEXT NODE CREATE KRA HAI li 
+        // where as innerHTML me poora traverse krna padt hai isiliye ye optimized hai aur poora HTML dalana pdta usme 
+        li.appendChild(k) // same as addLanguage function ka startig ke do line but slight optimization
+        //  APPEND CHILD ki khasiyat yahi hai ki directly jis type ka child hai wahi pe nya attach krdeta hai praent me 
+        const k1 = document.querySelector('.language') ;
+        k1.appendChild(li) 
     }
     addOptiLanguage('golang') 
 
     //Edit
-    const secondLang = document.querySelector("li:nth-child(2)") // NTH CHILD EK BAAR DEKHLENA KYA KRTA HAI 
-    console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"
+    
     const newli = document.createElement('li')
-    newli.textContent = "Mojo"
-    secondLang.replaceWith(newli) // NYA METHOD HAI 
+    newli.textContent = "Mojo" // isme me wapas se innerHTMl ak use krskte hai but theek hai 
+    const secondLang = document.querySelector("li:nth-child(2)") // NTH CHILD EK BAAR DEKHLENA KYA KRTA HAI 
+    // yha pe basically ho ye rha hai li hmlog specifically nth child ka hi directly source bnaliye hai 
+    // But upar me ho aisa rha tha ki hmlog bs language class ka reference select kr rhe the 
+    // console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"   // YE APPROACH KAAM KRTI HAI BUT KAM OPTIMIZED HAI 
+    secondLang.replaceWith(newli) // NYA METHOD HAI  
 
     //edit
     const firstLang = document.querySelector("li:first-child")
