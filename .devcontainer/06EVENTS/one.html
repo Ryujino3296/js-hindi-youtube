@@ -22,6 +22,7 @@
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
+    // bohot zyada achi nahi hai , features km deta hai , propagation nahi hai 
 
      // attachEvent()
     // jQuery - on
@@ -30,6 +31,8 @@
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
+
+    //  neeche ke do ko milake ek sath hi kaam kiya ja rha hai ( event listner ko )
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -40,6 +43,11 @@
     //     e.stopPropagation()   /////////////////  BUBBLE HOKE UPAR KE EVENT PE NAHI JAYEGA 
     // }, false)
     
+    /// UPAR ME JO DO EVENTS LIKHE HAI USME HI PROPAGATION HOTA HAI if  "e.stopPropagation"  use na kiya jaye to 
+
+
+    // preventDefault default action jo hone wala hoga usko click krne se use rok dega aur jo function specify kr rhi hai wo krega
+
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     //     e.stopPropagation()
@@ -48,7 +56,7 @@
    
     // BUBBLING TAKES PLACE i.e INSIDE SE OUTSIDE when default is false ... CAPTURING takes place i.e OUTSIDE SE INSIDE 
 
-    
+    // yha pe bs remove image hi hona chahiye 
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
