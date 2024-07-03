@@ -26,7 +26,7 @@ const newStringOne = "   hitesh    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
-const url = "https://hitesh.com/hitsh%20choudhary"e
+const url = "https://hitesh.com/hitsh%20choudhary"
 
 console.log(url.replace('%20', '-'))
 
